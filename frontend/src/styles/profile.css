@@ -1,0 +1,184 @@
+.profile-page {
+  min-height: 100vh;
+  background-color: #B8E2E6;
+  padding: 2rem;
+}
+
+.profile-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.profile-image-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.default-profile-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.edit-image-button {
+  position: absolute;
+  right: -180px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.edit-image-button:hover {
+  background: none;
+}
+
+.image-upload-input {
+  display: none;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.input-with-edit {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-with-edit input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.input-with-edit input:not([readonly]) {
+  background-color: #fff;
+}
+
+.input-with-edit input[readonly] {
+  background-color: #f9f9f9;
+}
+
+.button-group {
+  position: static;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.edit-button {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.edit-button:hover {
+  background: none;
+}
+
+.save-button {
+  width: 100%;
+  padding: 1rem;
+  background: #B8E2E6;
+  border: none;
+  border-radius: 4px;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.save-button:hover {
+  background: #9ed4d9;
+}
+
+.input-with-edit input[type="password"],
+.input-with-edit input[type="text"] {
+  padding: 0.75rem;
+}
+
+/* Adăugăm stiluri pentru containerul parolei */
+.password-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #666;
+    margin: 0;
+    width: auto;
+    z-index: 1;
+    margin-top: 0;
+}
+
+.password-toggle:hover {
+  background: none;
+}
+
+/* Ajustăm padding-ul pentru input-ul de parolă pentru a face loc butonului */
+.password-input-container input {
+  padding-right: 40px;
+}
